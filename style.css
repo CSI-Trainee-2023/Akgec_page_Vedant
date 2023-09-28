@@ -1,0 +1,66 @@
+html,
+body{
+    background-color: beige;
+}
+.text{
+padding:0;
+margin:0;
+color:black;
+font-size: 20px;
+margin-left:30px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+h1{
+    text-decoration: underline dashed red 2px;
+    color: black;
+}
+#navbar{
+    height: 70px;
+    background-color:black;
+    position: sticky;
+    color: white;
+}
+a {
+margin-right:150px;
+color: yellow;
+    font-size: 20px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#slide{
+    height: 20px;
+    background-color:black;
+    position: sticky;
+    color: white;
+}
+.movingtext{
+    font-size: 20px;
+}
+a:link {
+    color: yellow;
+    text-decoration: none;
+  }
+a:visited {
+    color:yellow;
+    text-decoration: none;
+  }
+a:hover {
+    color: red;
+    text-decoration: none;
+  }
+  
+body{
+    min-height: calc(100wh-70px);
+}
+.image{
+    margin-top: 100px;
+    min-height: 200px;
+    min-width: 250px;
+}
+
+
