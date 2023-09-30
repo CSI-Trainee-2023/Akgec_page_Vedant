@@ -1,34 +1,46 @@
 html,
 body{
+    height: 100%; 
     background-color: beige;
 }
 .text{
 padding:0;
 margin:0;
 color:black;
-font-size: 20px;
-margin-left:30px;
-font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: 21px;
+margin-left:20px;
+font-family:'Times New Roman', Times, serif;
 }
 .container {
     display: flex;
-    align-items: left;
+    /* align-items: left; */
     justify-content: left;
   }
 h1{
     text-decoration: underline dashed red 2px;
     color: black;
 }
+h2{
+    text-decoration: underline dashed red 2px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+  color:black;
+  font-size: 18px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 #navbar{
-    height: 70px;
+    height: 30px;
     background-color:black;
-    position: sticky;
+    position:sticky;
     color: white;
+    display: flex;
+    justify-content: space-around;
 }
 a {
-margin-right:150px;
 color: yellow;
-    font-size: 20px;
+    font-size: 23px;
 font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -37,10 +49,10 @@ font-family:Georgia, 'Times New Roman', Times, serif;
     background-color:black;
     position: sticky;
     color: white;
-}
-.movingtext{
     font-size: 20px;
+    margin-top:10px;
 }
+
 a:link {
     color: yellow;
     text-decoration: none;
@@ -62,5 +74,260 @@ body{
     min-height: 200px;
     min-width: 250px;
 }
+  #button{
+    background-color: blue;
+    font-size:20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+    padding: 10px;
+    color: aliceblue;
+    float: right;
+    margin-right: 20px;
+  }
+  #read{
+    margin:0;
+  }
+p {
+        border: 1px solid brown;
+        font-size: 20;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+.pimg{
+  background-attachment: fixed;
+  background-image: url(https://www.akgec.ac.in/wp-content/uploads/2019/09/b.tech_.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70%;
+}
+.fronttext {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color:white;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity:100%;
+}
+.title-word {
+  animation: color-animation 6s linear infinite;
+}
+.textbg{
+  background-color: brown;
+}
+@keyframes color-animation {
+  0%    {color:darkgreen}
+  32%   {color: red}
+  33%   {color: darkorange}
+  65%   {color: brown}
+  66%   {color: green}
+  99%   {color: darkorchid}
+  100%  {color: darkblue}
+}
+.container1{
+  border: 2px solid black;
+  width: 300px;
+  height: 400px;
+}
+#box1{
+background-image: url(https://www.akgec.ac.in/wp-content/uploads/2020/11/AS_PC_Lab-1170x700xct.jpg);
+background-size: cover;
+ 
+  height: 200px;
+  width: 300px;
+  display: inline-block;
+  margin-right: 90px;
+}
+#box2{
+  background-image: url(https://storage.googleapis.com/ezap-prod/colleges/1571/cf5c30696d7643a29b189eecebbcbbe5.jpeg);
+  background-size: cover;
+   
+    height: 200px;
+    width: 400px;
+    display: inline-block;
+    margin-right: 100px;
+  }
+  #box3{
+    background-image: url(https://blog.rmgoe.org/wp-content/uploads/2022/06/AKG-Engineering-College-Ghaziabad.jpg);
+    background-size: cover;
+      height: 200px;
+      width: 300px;
+      display: inline-block;
+    }
+    #box4{
+      background-image: url(https://2.bp.blogspot.com/-85Ktath6L_A/Uc06BsXsjKI/AAAAAAAAAEI/j_A_IgETZLg/s800/aaaaaa.jpg);
+      background-size: cover;
+        height: 200px;
+        width: 300px;
+        display: inline-block;
+      }
+.bigcontainer{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+.pimg4{
+  background-attachment: fixed;
+  background-image: url(https://media.getmyuni.com/azure/college-images-test/ajay-kumar-garg-engineering-college-akgec-ghaziabad/cf5c30696d7643a29b189eecebbcbbe5.jpeg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80%;
+}
+.textback{
+  background: #f8f9f9;
+  padding: 10px;
+  position: absolute;
+  top: 40%;
+  width: 60%;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-left:220px;
+}
+.placementImage{
+  display: flex;
+  justify-content: space-around;
+}
+.placementImage1{
+  display: flex;
+  justify-content: space-around;
+}
+.event{
+  display: flex;
+  justify-content: space-around ;
+}
+.footer{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-top:5px solid darkgoldenrod;
+  padding:20px;
+  display: flex;
+  justify-content: space-around;
+}
+/* Centre OF Exellence Page */
+.kuka{
+  display: flex;
+    align-items: left; 
+     justify-content: left;
+  background-color: orangered;
+}
+.kukaHeading{
+   margin-left:60px;
+   color: white;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+}
+#content{
+  font-size:20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  color: aliceblue;
+}
+.heading{
+  background-color: black;
+  color:#f8f9f9;
+  font-size:40px;
+  height: 120px;
+  font-family:monospace;
+  
+}
+#path{
+  font-size: 15px;
+  text-decoration: underline;
+}
+.labview{
+  display: flex;
+    align-items: left; 
+     justify-content: left;
+  background-color: blue;
+}
+.siemens{
+  display: flex;
+    align-items: left; 
+     justify-content: left;
+  background-color: green;
+}
+.rexroth{
+  display: flex;
+    align-items: left; 
+     justify-content: left;
+  background-color:purple;
+}
+.pimg5{
+  background-attachment: fixed;
+  background-image: url(https://akgecskills.in/wp-content/uploads/2020/04/kuka.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50%;
+}
+.pimg6{
+  background-attachment: fixed;
+  background-image: url(https://content3.jdmagicbox.com/comp/ghaziabad/q1/011pxx11.xx11.170712145551.r3q1/catalogue/akgec-ni-labview-academy-bulandshahr-road-industrial-area-ghaziabad-institutes-9yzjd0u5ej.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50%;
+}
+.pimg7{
+  background-attachment: fixed;
+  background-image: url(https://siemens.akgecskills.in/wp-content/uploads/2020/12/about.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50%;
+}
+.pimg8{
+  background-attachment: fixed;
+  background-image: url(https://rexroth.akgecskills.in/wp-content/uploads/2020/08/about.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50%;
+}
+/* College Awards */
+.box5{
+  position: relative;
+  margin-left: 25px;
+  display: flex;
+ 
+  /* border: 2px solid black;
+  border-radius: 5%; */
+}
+.box6{
+  position: relative;
+  margin-left: 48px;
+  display: flex;
+}
+.awardsContent{
+background-color:darkgoldenrod;
+color:black;
+font-size: 22px;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 15px;
+}
+#awardsContent1{
+  color:black;
+  font-size: 18px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
 
+.awardimages{
+  display: flex;
+  justify-content: space-around;
+}
 
