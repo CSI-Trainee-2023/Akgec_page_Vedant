@@ -2,20 +2,30 @@ html,
 body{
     height: 100%; 
     background-color: beige;
+  
 }
-.text{
+
+/* Class for Main heading of the website */
+.akgecHeadingText{
+  /* flex-wrap: wrap; */
 padding:0;
 margin:0;
 color:black;
-font-size: 21px;
-margin-left:20px;
+font-size: 1.3em;
+margin-left:1em;
 font-family:'Times New Roman', Times, serif;
 }
-.container {
+
+/* Class for the Main heading, Moving text, and Navigation bar */
+.containerForHeader {
     display: flex;
-    /* align-items: left; */
     justify-content: left;
-  }
+   
+
+}
+.containerForHeader img{
+    height: 100%;
+}
 h1{
     text-decoration: underline dashed red 2px;
     color: black;
@@ -27,32 +37,46 @@ h2{
 }
 h3{
   color:black;
-  font-size: 18px;
+  font-size: 1.22em ;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#navbar{
-    height: 30px;
+
+/* ID for navigation bar */
+#navbarOfHeader{
     background-color:black;
     position:sticky;
+    flex-wrap: wrap;
+    text-align: center;
     color: white;
     display: flex;
     justify-content: space-around;
+    
 }
+.textBackgroundForHeader{
+  background-color: brown;
+}
+/* class for anchor tags used in navigation bar */
 a {
 color: yellow;
-    font-size: 23px;
+    font-size: 1.5em;
 font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
-#slide{
+/* ID for moving text */
+#movingTextInHeader{
     height: 20px;
     background-color:black;
-    position: sticky;
     color: white;
     font-size: 20px;
     margin-top:10px;
+    flex-wrap: wrap;
 }
 
+#certificate{
+  height: 100%;
+  width: 100%;
+}
+
+/* Class for active,visited and hover over link */
 a:link {
     color: yellow;
     text-decoration: none;
@@ -65,34 +89,28 @@ a:hover {
     color: red;
     text-decoration: none;
   }
-  
-body{
-    min-height: calc(100wh-70px);
-}
-.image{
-    margin-top: 100px;
-    min-height: 200px;
-    min-width: 250px;
-}
-  #button{
+
+  /* READ MORE BUTTON */
+  #readMoreButton{
     background-color: blue;
-    font-size:20px;
+    font-size:0.7em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: inline;
     padding: 10px;
     color: aliceblue;
     float: right;
     margin-right: 20px;
+    flex-wrap: wrap;
   }
-  #read{
-    margin:0;
-  }
+  
 p {
-        border: 1px solid brown;
-        font-size: 20;
+        border: 0.05em solid brown;
+        font-size: 1.0em;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
-.pimg{
+
+ /* PARALLAX IMAGE 1 */
+.parallaxImage1{
   background-attachment: fixed;
   background-image: url(https://www.akgec.ac.in/wp-content/uploads/2019/09/b.tech_.jpg);
   position: relative;
@@ -100,23 +118,27 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 70%;
+
 }
-.fronttext {
+
+/* Text Over The Parallax Image  */
+
+.textOverTheParallaxImage {
   position: absolute;
   top: 40%;
   width: 100%;
   text-align: center;
   color:white;
-  font-size: 20px;
-  letter-spacing: 4px;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
   opacity:100%;
+  /* flex-wrap: wrap; */
 }
-.title-word {
+
+/* COLOR ANIMATION ON SUB TOPICS */
+.title-WordAnimation {
   animation: color-animation 6s linear infinite;
-}
-.textbg{
-  background-color: brown;
 }
 @keyframes color-animation {
   0%    {color:darkgreen}
@@ -127,49 +149,52 @@ p {
   99%   {color: darkorchid}
   100%  {color: darkblue}
 }
-.container1{
+/* BOXES OF COURCES OFFERED */
+.containerOfCourcesOffered{
   border: 2px solid black;
-  width: 300px;
-  height: 400px;
+  width: 18.5em;
+  height: 25em;
+  
 }
-#box1{
+
+/* Boxes of Cources Offered  */
+
+#containerOfCourcesOfferedbox1{
 background-image: url(https://www.akgec.ac.in/wp-content/uploads/2020/11/AS_PC_Lab-1170x700xct.jpg);
 background-size: cover;
+  height: 12.5em;
+  width: 100%; 
  
-  height: 200px;
-  width: 300px;
-  display: inline-block;
-  margin-right: 90px;
 }
-#box2{
+#containerOfCourcesOfferedbox2{
   background-image: url(https://storage.googleapis.com/ezap-prod/colleges/1571/cf5c30696d7643a29b189eecebbcbbe5.jpeg);
-  background-size: cover;
-   
-    height: 200px;
-    width: 400px;
-    display: inline-block;
+  background-size: cover;  
+    height: 12.5em;
+    width: 100%;
     margin-right: 100px;
+   
   }
-  #box3{
+  #containerOfCourcesOfferedbox3{
     background-image: url(https://blog.rmgoe.org/wp-content/uploads/2022/06/AKG-Engineering-College-Ghaziabad.jpg);
     background-size: cover;
-      height: 200px;
-      width: 300px;
-      display: inline-block;
+      height: 12.5em;
+      width: 100%;  
+      
     }
-    #box4{
+    #containerOfCourcesOfferedbox4{
       background-image: url(https://2.bp.blogspot.com/-85Ktath6L_A/Uc06BsXsjKI/AAAAAAAAAEI/j_A_IgETZLg/s800/aaaaaa.jpg);
       background-size: cover;
-        height: 200px;
-        width: 300px;
-        display: inline-block;
+        height: 12.5em;
+        width: 100%;  
+      
       }
-.bigcontainer{
+.bigcontainerOfCourcesOffered{
   display: flex;
   align-items: left;
   justify-content: left;
+  flex-wrap: wrap;
 }
-.pimg4{
+.parallaxImage2{
   background-attachment: fixed;
   background-image: url(https://media.getmyuni.com/azure/college-images-test/ajay-kumar-garg-engineering-college-akgec-ghaziabad/cf5c30696d7643a29b189eecebbcbbe5.jpeg);
   position: relative;
@@ -177,32 +202,37 @@ background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 80%;
+  flex-wrap: wrap;
 }
-.textback{
+.textOverParallacImage2{
   background: #f8f9f9;
-  padding: 10px;
+  padding: 0.4em;
   position: absolute;
   top: 40%;
   width: 60%;
   color: black;
-  font-size: 27px;
-  letter-spacing: 8px;
+  font-size: 1.7em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  margin-left:220px;
+  margin-left:8.5em;
+  flex-wrap: wrap;
 }
 .placementImage{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .placementImage1{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-.event{
+.eventAchievementTopperSection{
   display: flex;
   justify-content: space-around ;
+  flex-wrap: wrap;
 }
-.footer{
+.footerContactUs{
   background-color: black;
   color: white;
   font-size: 20px;
@@ -210,8 +240,38 @@ background-size: cover;
   padding:20px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
+@media (max-width: 821px) {
+  .containerForHeader{
+    display: block;
+    
+  }
+  .containerForHeader img{
+    width: 100%;
+    height: 20%;
+}
+  .bigcontainerOfCourcesOffered{
+    justify-content: center;
+}
+.textOverTheParallaxImage{
+  font-size:0.9rem;
+  top:20%;
+}
+.textOverParallacImage2{
+  justify-content: center;
+  right: 20%;
+}
+#certificate{
+  height: 30%;
+}
+}
+
+
+
+
 /* Centre OF Exellence Page */
+
 .kuka{
   display: flex;
     align-items: left; 
@@ -230,7 +290,7 @@ font-family: Arial, Helvetica, sans-serif;
   
   color: aliceblue;
 }
-.heading{
+.headingOfCenterOfExcellence{
   background-color: black;
   color:#f8f9f9;
   font-size:40px;
@@ -238,7 +298,7 @@ font-family: Arial, Helvetica, sans-serif;
   font-family:monospace;
   
 }
-#path{
+#pathOfCenterOfExcellence{
   font-size: 15px;
   text-decoration: underline;
 }
@@ -297,15 +357,25 @@ font-family: Arial, Helvetica, sans-serif;
   min-height: 50%;
 }
 /* College Awards */
-.box5{
+#pathOfCollegeAwards{
+  font-size: 15px;
+  text-decoration: underline;
+}
+.headingOfCollegeAwards{
+  background-color: black;
+  color:#f8f9f9;
+  font-size:40px;
+  height: 120px;
+  font-family:monospace;
+  
+}
+.collegeAwardsbox1{
   position: relative;
   margin-left: 25px;
   display: flex;
  
-  /* border: 2px solid black;
-  border-radius: 5%; */
 }
-.box6{
+.collegeAwardsbox2{
   position: relative;
   margin-left: 48px;
   display: flex;
@@ -331,3 +401,7 @@ padding: 15px;
   justify-content: space-around;
 }
 
+@media (max-width: 821px) {
+
+
+}
