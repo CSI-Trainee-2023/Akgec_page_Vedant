@@ -124,16 +124,16 @@ p {
 /* Text Over The Parallax Image  */
 
 .textOverTheParallaxImage {
+  background: #f8f9f9;
+  opacity: 70%;
   position: absolute;
   top: 40%;
   width: 100%;
   text-align: center;
-  color:white;
+  color:black;
   font-size: 1.25rem;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  opacity:100%;
-  /* flex-wrap: wrap; */
 }
 
 /* COLOR ANIMATION ON SUB TOPICS */
@@ -256,7 +256,7 @@ background-size: cover;
 }
 .textOverTheParallaxImage{
   font-size:0.9rem;
-  top:20%;
+  top:50%;
 }
 .textOverParallacImage2{
   justify-content: center;
@@ -293,7 +293,7 @@ font-family: Arial, Helvetica, sans-serif;
 .headingOfCenterOfExcellence{
   background-color: black;
   color:#f8f9f9;
-  font-size:40px;
+  font-size:2.7rem;
   height: 120px;
   font-family:monospace;
   
@@ -356,16 +356,48 @@ font-family: Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
   min-height: 50%;
 }
+
+
+
+
+@media (max-width: 800px) {
+.kuka{
+  display: block;
+}
+.labview{
+  display: block;
+}
+.siemens{
+  display: block;
+}
+.rexroth{
+  display: block;
+}
+}
+@media (max-width: 520px) {
+  .headingOfCenterOfExcellence{
+    height: 14rem;
+    font-size: 12.1vw;
+  }
+    #content{
+     font-size: 15px;
+
+    }
+    .kukaHeading{
+      margin-left: 5%;
+    }
+  }
+
 /* College Awards */
 #pathOfCollegeAwards{
-  font-size: 15px;
+  font-size: 1rem;
   text-decoration: underline;
 }
 .headingOfCollegeAwards{
   background-color: black;
   color:#f8f9f9;
-  font-size:40px;
-  height: 120px;
+  font-size:2.7rem;
+  height: 8rem;
   font-family:monospace;
   
 }
@@ -401,7 +433,27 @@ padding: 15px;
   justify-content: space-around;
 }
 
-@media (max-width: 821px) {
-
+@media (max-width: 1250px) {
+.collegeAwardsbox1{
+  margin-left: 0%;
+}
+.collegeAwardsbox2{
+  margin-left: 0%;
+}
+}
+@media (max-width: 900px){
+.collegeAwardsbox1{
+  height: 100%;
+  width: 100%;
+}
+}
+@media (max-width: 350px){
+  .headingOfCollegeAwards{
+    font-size: 11vw;
+    height: 50vw;
+  }
+  #pathOfCollegeAwards{
+    font-size: 5vw;
+  }
 
 }
